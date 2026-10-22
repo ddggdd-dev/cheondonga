@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="ko"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><title>중문 흑돼지 천돈가 제주중문본점 · 난축맛돈 구이</title>
+
+<meta name="description" content="서귀포 중문 천제연로 280(중문보건소 건너편) 제주 흑돼지 구이집. 대표 메뉴 난축맛돈, 직원이 고기를 구워 드려요. 전용 주차장, 유아의자, 단체석. 전화 064-739-0775.">
+<meta name="format-detection" content="telephone=no">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="천돈가 제주중문본점 — 중문 흑돼지 난축맛돈 구이">
+<meta property="og:description" content="중문보건소 건너편, 직원이 구워 드리는 제주 흑돼지. 전용 주차장, 유아의자, 단체석.">
+<meta property="og:url" content="https://ddggdd-dev.github.io/cheondonga/v3/">
+<meta property="og:image" content="https://ddggdd-dev.github.io/cheondonga/v3/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="천돈가 상호와 전화, 석쇠 위 고기 (참고 이미지 · 실제 매장 사진 아님)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231C1714%22/%3E%3Cpath d=%22M16 5c3 5 7 7 7 13a7 7 0 0 1-14 0c0-3 2-5 3-7 1 2 2 3 3 3 0-3 0-6 1-9z%22 fill=%22%23F08A3C%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&amp;display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"천돈가 제주중문본점","servesCuisine":["Korean","Korean BBQ","제주 흑돼지 구이"],"telephone":"+82-64-739-0775","url":"https://ddggdd-dev.github.io/cheondonga/v3/","image":"https://ddggdd-dev.github.io/cheondonga/v3/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"천제연로 280, 1층","addressLocality":"서귀포시","addressRegion":"제주특별자치도","addressCountry":"KR"}}</script>
+<!-- 시안 v3 (2026-10-23): v2를 짧게 — 영업 띠+여행 요약을 "한눈에" 하나로, 난축맛돈 해설은 메뉴 안 접기(draft-only), 소스 섹션(페스토 사진) 삭제 → 메뉴 안 글 카드, FAQ는 한눈에와 겹치는 것 삭제.
+     v2 (2026-10-23): v1 + 여행 계획 손님(지도에 저장), 외국 손님(4개 언어·주소 복사·직원에게 보여 주는 말), 최종 수정일. 근거 벤치마킹/손님-결정-경로.md
+     v1 (2026-10-23). 근거: clients/cheondonga/README.md, reference/2026-10-23-기초정보-성식정리.txt, 벤치마킹/*.md
+     사장님 확인 전 정보뿐이다. 운영 배포 전에 전화·영업시간·메뉴·가격·난축맛돈 공급 증빙을 받아야 한다.
+     class="draft-only": 정보를 받기 전에는 운영 사이트에서 통째로 뺀다. .blank: 플레이스홀더.
+     robots noindex: 사장님 확인 전 검색 노출 방지. 운영 배포 때 뺀다. -->
+<style>
+/* 레이아웃: 숯불 색(짙은 갈색 띠 + 주황 불빛) + 밝은 종이색 본문. 주황은 전화·주 버튼에만. 손님 결정 순서: 뭐 먹나 → 얼마 → 어떻게 가나 → 예약 */
+:root{
+  --paper:#FAF6F0; --surface:#FFFFFF; --ink:#1E1915; --muted:#584D45; --line:#E6DCD0;
+  --band:#1C1714; --band-2:#2A221D; --band-ink:#F7F1EA; --band-muted:#CDBFB1;
+  --accent:#F08A3C; --accent-ink:#1E1206; --accent-deep:#9A4A0E; --accent-soft:#FCE8D6; --glow:#FFC08A;
+  --leaf:#2F6B3A;
+  --font:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px;
+  --radius:10px; --maxw:1120px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.25;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(var(--s2),env(safe-area-inset-left,0px));padding-right:max(var(--s2),env(safe-area-inset-right,0px))}
+:focus-visible{outline:3px solid var(--accent-deep);outline-offset:3px}
+
+/* 시안 표시 */
+.draft-note{background:#3B2A6B;color:#fff;font-size:.9375rem;font-weight:700;text-align:center;padding:10px var(--s2)}
+.draft-note small{font-size:inherit;font-weight:400;opacity:.92}
+
+/* 머리 */
+.top{background:var(--band);color:var(--band-ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:64px}
+.logo{display:inline-flex;align-items:baseline;min-height:44px;gap:8px;font-weight:900;font-size:1.375rem;text-decoration:none;letter-spacing:-.03em;padding-top:8px}
+.logo i{font-style:normal;font-size:.875rem;font-weight:700;color:var(--band-muted)}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:700;font-size:.9375rem;color:var(--band-muted)}
+.nav a:hover{color:var(--band-ink)}
+.top-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #5d5048;border-radius:999px;text-decoration:none;font-weight:700;white-space:nowrap}
+.top-tel b{color:var(--glow);font-variant-numeric:tabular-nums}
+
+/* 버튼 — 주 버튼은 "전화 문의" 하나 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 24px;border-radius:var(--radius);font:700 1.0625rem var(--font);text-decoration:none;cursor:pointer;border:2px solid transparent;text-align:center}
+.btn svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:#F6A060}
+.btn-ghost{background:transparent;color:inherit;border-color:currentColor}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tel-line{font-size:1rem;color:var(--band-muted)}
+.tel-line b{color:var(--glow);font-size:1.125rem;white-space:nowrap;font-variant-numeric:tabular-nums;user-select:all}
+
+/* 1. 첫 화면 */
+.hero{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;align-items:stretch;min-height:clamp(520px,74vh,680px)}
+.hero-copy{display:grid;gap:var(--s3);align-content:center;padding-block:var(--s6);padding-right:var(--s5)}
+.eyebrow{font-size:.9375rem;font-weight:700;color:var(--glow)}
+.hero h1{font-size:clamp(2rem,4.4vw,3.8rem);font-weight:900}
+.hero h1 .q{color:var(--glow)}
+.hero .sub{font-size:1.125rem;color:#EDE3D8;max-width:28em}
+.hero-media{position:relative;margin-right:calc(-1 * max(var(--s2),(100vw - var(--maxw))/2 + var(--s2)))}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--band) 0%,rgba(28,23,20,0) 24%)}
+.img-note{position:absolute;right:12px;bottom:12px;z-index:1;font-size:.8125rem;color:#fff;background:rgba(0,0,0,.62);padding:2px 8px;border-radius:4px}
+.strengths{list-style:none;margin:0;padding:var(--s3) 0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2);border-top:1px solid #43372f}
+.strengths li{display:flex;align-items:center;gap:12px;min-width:0}
+.strengths svg{width:30px;height:30px;flex:none;fill:none;stroke:var(--glow);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.strengths b{display:block;font-size:1.0625rem}
+.strengths span{display:block;font-size:.875rem;color:var(--band-muted);line-height:1.4}
+
+/* 2. 가기 전에: 영업·위치·주차·예약 */
+.info{background:var(--surface);border-bottom:1px solid var(--line)}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.info-grid>div{padding:var(--s3) var(--s3) var(--s3) 0;display:grid;gap:4px;align-content:start;min-width:0}
+.info-grid>div+div{padding-left:var(--s3);border-left:1px solid var(--line)}
+.info .t{font-size:.875rem;font-weight:700;color:var(--muted)}
+.info .v{font-size:1.125rem;font-weight:900}
+.info .v small{display:block;font-size:.9375rem;font-weight:400;color:var(--muted)}
+.info a.v{text-decoration:none}
+.info a.v:hover{text-decoration:underline}
+
+/* 섹션 공통 */
+.sec{padding-block:var(--s7)}
+.sec.alt{background:var(--surface)}
+.sec.dark{background:var(--band);color:var(--band-ink)}
+.sec-head{display:grid;gap:12px;max-width:40em;margin-bottom:var(--s5)}
+.sec-head .k{font-size:.9375rem;font-weight:700;color:var(--accent-deep)}
+.dark .sec-head .k{color:var(--glow)}
+.sec-head h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900}
+.sec-head p{color:var(--muted);font-size:1.0625rem;max-width:34em}
+.dark .sec-head p{color:var(--band-muted)}
+.mid-cta{margin-top:var(--s5);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.mid-cta .tel-line{color:var(--muted)}
+.mid-cta .tel-line b{color:var(--accent-deep)}
+
+/* 3. 난축맛돈 */
+.breed{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center}
+.breed>*{min-width:0}
+.breed figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden}
+.breed figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{list-style:none;margin:var(--s3) 0 0;padding:0;border-top:2px solid var(--ink)}
+.facts li{display:grid;grid-template-columns:130px 1fr;gap:var(--s2);padding:14px 0;border-bottom:1px solid var(--line)}
+.facts .t{font-weight:700;color:var(--muted);font-size:.9375rem;padding-top:2px}
+.facts .v{font-weight:700;font-size:1.0625rem}
+.facts .v small{display:block;font-weight:400;color:var(--muted);font-size:.9375rem}
+.src{margin-top:var(--s2);font-size:.9375rem;color:var(--muted)}
+.src a{color:var(--accent-deep);font-weight:700}
+
+/* 4. 메뉴 */
+.menu{display:grid;grid-template-columns:1.15fr 1fr;gap:var(--s5);align-items:start}
+.menu>*{min-width:0}
+.price{width:100%;border-collapse:collapse;background:var(--surface);font-variant-numeric:tabular-nums}
+.price caption{text-align:left;font-weight:900;font-size:1.1875rem;padding-bottom:12px}
+.price th,.price td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);font-size:1.0625rem;vertical-align:top}
+.price thead th{font-size:.875rem;color:var(--muted);font-weight:700;background:#F3EDE5}
+.price td small{display:block;font-size:.9375rem;color:var(--muted)}
+.price td.n{text-align:right;white-space:nowrap}
+.menu-note{margin-top:var(--s2);font-size:1rem;color:var(--muted)}
+.dish{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+.dish figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden;background:var(--line)}
+.dish img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.dish figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 10px 8px;color:#fff;font-weight:700;font-size:.9375rem;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0))}
+.dish figcaption small{display:block;font-weight:400;font-size:.8125rem;opacity:.95}
+
+/* 5. 바질마늘소스 */
+.sauce{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--s5);align-items:center}
+.sauce>*{min-width:0}
+.sauce figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden}
+.sauce figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.sauce h2 em{font-style:normal;color:#9FD3A5}
+.review-link{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;color:var(--glow);text-decoration:none}
+.review-link::after{content:"→"}
+
+/* 6. 업종 전용 기능: 예약·문의 내용 정리 */
+.tool{display:grid;grid-template-columns:1fr 1.05fr;gap:var(--s5);align-items:start}
+.tool>*{min-width:0}
+.tool-in{display:grid;gap:var(--s3)}
+.field{display:grid;gap:10px;border:0;margin:0;padding:0;min-width:0}
+.field legend{font-weight:700;font-size:1rem;color:var(--band-ink);padding:0;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0}
+.chips span{display:inline-flex;align-items:center;min-height:48px;padding:0 16px;border:1.5px solid #5d5048;border-radius:999px;font-size:1rem;cursor:pointer;color:var(--band-ink)}
+.chips input:checked+span{background:var(--glow);border-color:var(--glow);color:var(--accent-ink);font-weight:700}
+.chips input:focus-visible+span{outline:3px solid var(--glow);outline-offset:2px}
+.count{display:flex;align-items:center;gap:10px}
+.count .lab{min-width:4.5em;font-weight:700}
+.count button{width:48px;height:48px;border-radius:50%;border:1.5px solid #5d5048;background:transparent;color:var(--band-ink);font:900 1.375rem var(--font);cursor:pointer}
+.count output{min-width:2.4em;text-align:center;font-weight:900;font-size:1.25rem;font-variant-numeric:tabular-nums}
+.tool input[type=date],.tool textarea{font:inherit;font-size:1.0625rem;color:var(--band-ink);background:var(--band-2);border:1.5px solid #5d5048;border-radius:var(--radius);padding:12px 14px;min-height:52px;width:100%;color-scheme:dark}
+.tool textarea{min-height:88px;resize:vertical}
+.tool textarea::placeholder{color:#B3A595}
+.tool-out{background:var(--surface);color:var(--ink);border-radius:var(--radius);padding:var(--s4);display:grid;gap:var(--s3);position:sticky;top:16px}
+.tool-out h3{font-size:1.125rem}
+.tool-out pre{margin:0;white-space:pre-wrap;font:inherit;font-size:1.0625rem;line-height:1.8;background:#F6F0E8;border-radius:8px;padding:var(--s2)}
+.out-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.out-btns .btn{padding:12px 14px}
+.out-btns .btn:first-child{grid-column:1/-1}
+.copied{font-size:.9375rem;color:var(--accent-deep);min-height:1.5em}
+.tool-note{font-size:1rem;color:var(--muted)}
+
+/* 7. 오시는 길 */
+.way{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:start}
+.way>*{min-width:0}
+.addr{font-size:clamp(1.375rem,2.6vw,1.75rem);font-weight:900;line-height:1.35}
+.moved{margin-top:var(--s2);background:var(--accent-soft);border-radius:8px;padding:14px 16px;font-size:1rem}
+.moved b{color:var(--accent-deep)}
+.maps{display:grid;gap:10px;margin-top:var(--s3)}
+.maps a{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 18px;border:1.5px solid var(--ink);border-radius:var(--radius);text-decoration:none;font-weight:700;font-size:1.0625rem;background:var(--surface)}
+.maps a::after{content:"↗";color:var(--accent-deep)}
+.park{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4);display:grid;gap:var(--s2)}
+.park h3{font-size:1.25rem}
+.park .ph{aspect-ratio:16/9;display:grid;place-items:center;border-radius:8px;text-align:center;padding:var(--s2)}
+
+/* 8. FAQ */
+.faq{max-width:860px;border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 44px 20px 0;font-weight:700;font-size:1.125rem;position:relative;min-height:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);color:var(--accent-deep);font-size:1.6rem;font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--muted);padding-bottom:20px;max-width:42em}
+
+/* 9. 외국어 */
+.lang{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2)}
+.lang>div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s3);display:grid;gap:6px;min-width:0}
+.lang h3{font-size:1.125rem}
+.lang p{font-size:1rem;color:var(--muted)}
+
+/* 10. 연락 */
+.contact{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s5);align-items:start}
+.contact>*{min-width:0}
+.big-tel{display:inline-block;padding-block:4px;text-decoration:none;font-size:clamp(2.2rem,6.4vw,3.6rem);font-weight:900;color:var(--glow);line-height:1.1;white-space:nowrap;font-variant-numeric:tabular-nums;user-select:all}
+.after{list-style:none;margin:var(--s3) 0 0;padding:0;display:grid;gap:10px}
+.after li{display:grid;grid-template-columns:96px 1fr;gap:12px;color:var(--band-muted)}
+.after b{color:var(--band-ink)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--s3)}
+.links a{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border:1px solid #5d5048;border-radius:999px;font-weight:700;text-decoration:none}
+
+/* 바닥 */
+.foot{background:#141110;color:#CDBFB1;font-size:.9375rem;padding-block:var(--s5) calc(var(--s5) + 8px)}
+.foot .wrap{display:grid;gap:8px}
+.foot b{color:#fff}
+
+/* 2-1. 계획 중인 손님: 요약 + 지도 저장 */
+.plan-sum{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s5);align-items:start}
+.plan-sum>*{min-width:0}
+.sum{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.sum li{display:grid;grid-template-columns:110px 1fr;gap:var(--s2);padding:14px 0;border-bottom:1px solid var(--line)}
+.sum .t{font-weight:700;color:var(--muted);font-size:.9375rem;padding-top:2px}
+.sum .v{font-weight:700}
+.sum .v small{display:block;font-weight:400;color:var(--muted);font-size:.9375rem}
+.save{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4);display:grid;gap:var(--s2)}
+.save h3{font-size:1.25rem}
+.save p{color:var(--muted);font-size:1rem}
+.copy-addr{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#F3EDE5;border-radius:8px;padding:12px 14px}
+.copy-addr span{font-weight:700;flex:1 1 220px;min-width:0}
+.copy-addr button{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--ink);background:var(--surface);font:700 .9375rem var(--font);cursor:pointer;color:var(--ink)}
+.note-sm{font-size:.9375rem;color:var(--muted)}
+/* 9. 외국어 탭 */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--s3)}
+.tabs button{min-height:48px;padding:0 18px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;font:700 1rem var(--font);cursor:pointer;color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.lang-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s4);align-items:start}
+.lang-panel>*{min-width:0}
+.lang-panel h3{font-size:1.375rem;margin-bottom:8px}
+.lang-panel dl{margin:var(--s2) 0 0;display:grid;grid-template-columns:120px 1fr;gap:10px var(--s2)}
+.lang-panel dt{font-weight:700;color:var(--muted);font-size:.9375rem}
+.lang-panel dd{margin:0;font-weight:700}
+.staff{background:var(--band);color:var(--band-ink);border-radius:var(--radius);padding:var(--s3);display:grid;gap:10px}
+.staff h4{margin:0;font-size:1rem;color:var(--glow)}
+.staff ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.staff li{display:grid;gap:2px;padding:10px 12px;background:var(--band-2);border-radius:8px}
+.staff li b{font-size:1.25rem}
+.staff li span{font-size:.9375rem;color:var(--band-muted)}
+
+[hidden]{display:none!important}
+.more{border-top:1px solid var(--line);padding-top:var(--s2)}
+.more summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sauce-card{margin-top:var(--s3);display:grid;gap:6px;background:#EEF4EC;border:1px solid #CFE0CB;border-radius:var(--radius);padding:var(--s3)}
+.sauce-card b{font-size:1.125rem;color:var(--leaf)}
+.sauce-card span{color:var(--muted)}
+.sauce-card a{color:var(--leaf);font-weight:700}
+/* 플레이스홀더 (시안 전용) */
+.blank{display:inline-block;min-width:3.5em;background:rgba(240,138,60,.22);outline:1.5px dashed var(--accent);outline-offset:-1px;padding:0 .4em;border-radius:3px;color:inherit}
+
+/* 하단 전화 바 — 화면에 고정되는 것은 이것 하나 */
+.callbar{display:none}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .info-grid{grid-template-columns:1fr 1fr}
+  .info-grid>div:nth-child(3){padding-left:0;border-left:0}
+  .info-grid>div:nth-child(n+3){border-top:1px solid var(--line)}
+  .breed,.menu,.sauce,.tool,.way,.contact{grid-template-columns:1fr}
+  .strengths{grid-template-columns:1fr 1fr}
+  .lang{grid-template-columns:1fr}
+  .plan-sum,.lang-panel{grid-template-columns:1fr}
+  .tool-out{position:static}
+}
+@media (max-width:720px){
+  .sec{padding-block:var(--s6)}
+  .top .wrap{min-height:56px}
+  .top-tel{display:none}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-media{order:-1;margin:0 calc(-1 * max(var(--s2),env(safe-area-inset-left,0px)));aspect-ratio:900/700}
+  .hero-media::after{background:linear-gradient(0deg,var(--band) 0%,rgba(28,23,20,0) 32%)}
+  .hero-copy{padding:var(--s2) 0 var(--s4);gap:var(--s2)}
+  .hero .btn{flex:1 1 100%}
+  .strengths span{display:none}
+  .info-grid{grid-template-columns:1fr}
+  .info-grid>div,.info-grid>div+div{padding:var(--s2) 0;border-left:0}
+  .info-grid>div+div{border-top:1px solid var(--line)}
+  .facts li,.sum li{grid-template-columns:1fr;gap:2px}
+  .lang-panel dl{grid-template-columns:1fr;gap:2px}
+  .lang-panel dd{margin-bottom:8px}
+  .after li{grid-template-columns:1fr;gap:0}
+  .price th,.price td{padding:12px 8px}
+  .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(28,23,20,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid rgba(240,138,60,.6);padding-bottom:env(safe-area-inset-bottom,0px);transform:translateY(110%);transition:transform .2s}
+  .callbar.show{transform:none}
+  .callbar a{display:flex;justify-content:center;align-items:center;gap:8px;min-height:58px;color:#fff;text-decoration:none;font-weight:900;font-size:1.0625rem}
+  .callbar b{color:var(--glow);font-variant-numeric:tabular-nums}
+  body{padding-bottom:60px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.callbar{transition:none}}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body><div class="draft-note draft-only" role="note">천돈가 사장님께 드리는 제안용 예시입니다. 정식 홈페이지가 아닙니다. <small>— 노란 점선 칸은 확인할 정보, 사진은 모두 참고 이미지예요. (시안 v3)</small></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">천돈가 <i>제주중문본점</i></a>
+    <nav class="nav" aria-label="바로가기">
+      <a href="#trip">한눈에·길찾기</a>
+      <a href="#menu">메뉴</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a class="draft-only" href="#lang" lang="en">EN · 中文 · 日本語</a>
+    </nav>
+    <a class="top-tel" href="tel:064-739-0775" data-track="call" data-where="header">전화 <b>064-739-0775</b></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- 1. 첫 화면: 무슨 집? 왜 여기? 뭘 누르나? -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">서귀포 중문 · 중문보건소 건너편</p>
+        <h1 id="h1">제주 흑돼지<br><span class="q">난축맛돈</span>,<br>구워 드려요</h1>
+        <p class="sub">직원이 고기를 구워 드려요. 바질마늘소스와 함께 드셔 보세요.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" id="hero-call" href="tel:064-739-0775" data-track="call" data-where="hero"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>전화 문의</a>
+          <a class="btn btn-ghost" href="#trip" data-track="save" data-where="hero"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"></path></svg>한눈에 보기·지도 저장</a>
+        </div>
+        <p class="tel-line"><a class="draft-only" href="#lang" lang="en" style="color:var(--glow);font-weight:700;margin-right:10px">English · 中文 · 日本語 ↓</a>전화 <b>064-739-0775</b><span class="draft-only"> · <span class="blank">대표 번호 확인 필요</span></span></p>
+      </div>
+      <div class="hero-media">
+        <picture>
+          <source media="(max-width:720px)" srcset="img/herom.jpg" width="900" height="760">
+          <img src="img/hero.jpg" width="1600" height="1000" alt="석쇠 위에서 익어 가는 두툼한 돼지고기 (참고 이미지)" fetchpriority="high">
+        </picture>
+        <span class="img-note">참고 이미지</span>
+      </div>
+    </div>
+    <ul class="strengths" aria-label="이 집의 특징">
+      <li><svg viewBox="0 0 24 24"><path d="M4 14c0-5 4-8 8-8s8 3 8 8"></path><path d="M3 14h18v2a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"></path></svg><div><b>난축맛돈</b><span>대표 메뉴</span></div></li>
+      <li><svg viewBox="0 0 24 24"><path d="M4 20 14 10"></path><path d="M14 10l2-6 4 4-6 2"></path><path d="M4 12h6M7 9v6"></path></svg><div><b>직원이 구워 드려요</b><span>굽는 서비스</span></div></li>
+      <li><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path></svg><div><b>전용 주차장</b><span>매장 전용</span></div></li>
+      <li><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><circle cx="17" cy="9" r="2"></circle><path d="M3 20c0-4 3-6 6-6s6 2 6 6M15 20c0-3 1-5 3-5s3 2 3 5"></path></svg><div><b>유아의자·단체석</b><span>안내 있음</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2-1. 여행 계획 중인 손님: 한눈 요약 + 지도에 저장 -->
+<section class="sec alt" id="trip" aria-labelledby="trip-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="k">가기 전에 한눈에</p>
+      <h2 id="trip-h">천돈가, 한눈에</h2>
+      <p>여행 일정을 짜거나 지금 갈 곳을 찾을 때 필요한 것만 모았어요. 지도 앱에 저장해 두면 제주에서 바로 다시 찾을 수 있어요.</p>
+    </div>
+    <div class="plan-sum">
+      <ul class="sum">
+        <li><span class="t">어떤 집</span><span class="v">제주 흑돼지 구이집<small>대표 메뉴 난축맛돈 · 직원이 고기를 구워 드려요 · 바질마늘소스</small></span></li>
+        <li><span class="t">어디</span><span class="v">서귀포 중문, 중문보건소 건너편<small>천제연로 280, 1층</small></span></li>
+        <li><span class="t">언제</span><span class="v">11:30 ~ 23:00<small class="draft-only"><span class="blank">휴무일 · 브레이크타임 · 마지막 주문</span></small></span></li>
+        <li><span class="t">가격대</span><span class="v"><span class="blank">1인 기준 ○만 원대 (메뉴판 확인 후)</span></span></li>
+        <li><span class="t">차로 가면</span><span class="v">전용 주차장<small class="draft-only"><span class="blank">○대 · 입구 위치 · 입구 사진</span></small></span></li>
+        <li><span class="t">아이와</span><span class="v">유아의자 있어요</span></li>
+        <li><span class="t">예약</span><span class="v">네이버 예약 안내 있음 · 전화 문의<small class="draft-only"><span class="blank">대기 여부 · 캐치테이블 등 다른 예약 앱 사용 여부</span></small></span></li>
+      </ul>
+      <div class="save">
+        <h3>지도 앱에 저장·길찾기</h3>
+        <p>앱에서 천돈가를 열고 저장(별·하트) 버튼을 눌러 두세요.</p>
+        <div class="maps" style="margin-top:0">
+          <a href="https://map.naver.com/p/search/%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener" data-track="save" data-where="naver">네이버 지도에서 열기</a>
+          <a href="https://map.kakao.com/?q=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener" data-track="save" data-where="kakao">카카오맵에서 열기</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener" data-track="save" data-where="google">Google 지도에서 열기</a>
+        </div>
+        <div class="copy-addr"><span id="addrKo">제주특별자치도 서귀포시 천제연로 280</span><button type="button" data-copy="addrKo">주소 복사</button></div>
+        <p class="moved" style="margin-top:0"><b>옮겼어요.</b> 예전 주소(일주서로 873)에서 지금 자리로 넓혀 이전했습니다. 지도 앱에 옛 주소가 나오면 위 주소로 찾아 주세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 왜 여기? 난축맛돈 -->
+<!-- 4. 얼마? 메뉴 -->
+<section class="sec alt" id="menu" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="k">메뉴·가격</p>
+      <h2 id="menu-h">난축맛돈 구이와 식사 메뉴</h2>
+      <p class="draft-only"><span class="blank">메뉴판을 받으면 중량·가격을 모두 적습니다. 받기 전 운영 버전: "가격은 전화로 물어봐 주세요"</span></p>
+    </div>
+    <div class="menu">
+      <div>
+        <table class="price">
+          <caption>구이</caption>
+          <thead><tr><th scope="col">메뉴</th><th scope="col">중량</th><th scope="col" style="text-align:right">가격</th></tr></thead>
+          <tbody>
+            <tr><td>제주 흑돼지 난축맛돈<small><span class="blank">구성(부위)</span></small></td><td><span class="blank">○g</span></td><td class="n"><span class="blank">○원</span></td></tr>
+            <tr class="draft-only"><td><span class="blank">다른 구이 메뉴 (메뉴판 확인 후)</span></td><td><span class="blank">○g</span></td><td class="n"><span class="blank">○원</span></td></tr>
+          </tbody>
+        </table>
+        <table class="price" style="margin-top:var(--s4)">
+          <caption>식사·곁들임</caption>
+          <thead><tr><th scope="col">메뉴</th><th scope="col" style="text-align:right">가격</th></tr></thead>
+          <tbody>
+            <tr><td>흑돼지김치찌개</td><td class="n"><span class="blank">○원</span></td></tr>
+            <tr><td>된장찌개</td><td class="n"><span class="blank">○원</span></td></tr>
+            <tr><td>열무국수</td><td class="n"><span class="blank">○원</span></td></tr>
+            <tr><td>한라산계란찜</td><td class="n"><span class="blank">○원</span></td></tr>
+          </tbody>
+        </table>
+        <details class="draft-only more" style="margin-top:var(--s3)"><summary>난축맛돈은 어떤 돼지인가요? <span class="blank">공급 증빙 확인 후 공개</span></summary>
+          <ul class="facts">
+            <li><span class="t">개발</span><span class="v">농촌진흥청 국립축산과학원 난지축산연구소(현 난지축산연구센터)<small>2014년 특허·상표 등록</small></span></li>
+            <li><span class="t">교배</span><span class="v">제주 재래 흑돼지 × 랜드레이스</span></li>
+            <li><span class="t">마블링</span><span class="v">등심 근내지방 평균 약 10.5%<small>일반 돼지 등심(2~2.5%)보다 높게 조사됨</small></span></li>
+          </ul>
+          <p class="src">출처: <a href="https://www.rda.go.kr/webzine/2020/11/sub1-2.html" target="_blank" rel="noopener">농촌진흥청 웹진 2020년 11월호</a></p>
+        </details>
+        <div class="sauce-card"><b>함께 나오는 소스 · 바질마늘소스</b><p style="color:var(--muted)">돼지고기에 바질마늘소스를 곁들여 드실 수 있어요. 다녀가신 분들의 리뷰는 <a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener">네이버</a>에서 보실 수 있어요.</p><span class="draft-only"><span class="blank">소스 정식 이름 · 실제 소스 사진</span></span></div>
+        <p class="menu-note draft-only"><span class="blank">메뉴판 사진을 받으면 이름·중량·가격을 그대로 옮깁니다. 공개된 옛 정보의 가격은 쓰지 않았어요.</span></p>
+      </div>
+      <div class="dish">
+        <figure><img src="img/raw.jpg" width="900" height="675" alt="접시에 담긴 생 돼지고기" loading="lazy"><figcaption>구이용 고기<small>참고 이미지</small></figcaption></figure>
+        <figure><img src="img/grill.jpg" width="900" height="675" alt="집게로 석쇠 위 고기를 굽는 모습" loading="lazy"><figcaption>굽는 모습<small>참고 이미지</small></figcaption></figure>
+        <figure><img src="img/stew.jpg" width="900" height="675" alt="두부와 파를 올린 빨간 찌개" loading="lazy"><figcaption>흑돼지김치찌개<small>참고 이미지</small></figcaption></figure>
+        <figure><img src="img/table.jpg" width="900" height="675" alt="불판과 반찬이 차려진 고깃집 상차림" loading="lazy"><figcaption>상차림<small>참고 이미지</small></figcaption></figure>
+      </div>
+    </div>
+    <div class="mid-cta">
+      <a class="btn btn-primary" href="tel:064-739-0775" data-track="call" data-where="menu"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>전화 문의</a>
+      <span class="tel-line"><b>064-739-0775</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 업종 전용 기능: 예약·문의 내용 정리 -->
+<section class="sec dark" id="plan" aria-labelledby="plan-h" style="border-top:1px solid #33291f">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="k">전화 전에 30초</p>
+      <h2 id="plan-h">몇 분이, 언제 오시나요?</h2>
+      <p>고르시면 전화로 말씀하실 내용을 정리해 드려요. 복사해서 네이버 예약에 적으셔도 돼요.</p>
+    </div>
+    <div class="tool">
+      <form class="tool-in" id="planForm" onsubmit="return false">
+        <fieldset class="field">
+          <legend>날짜</legend>
+          <input type="date" id="pDate" aria-label="방문 날짜">
+        </fieldset>
+        <fieldset class="field">
+          <legend>시간대</legend>
+          <div class="chips">
+            <label><input type="radio" name="time" value="점심"><span>점심</span></label>
+            <label><input type="radio" name="time" value="저녁 6시 전"><span>저녁 6시 전</span></label>
+            <label><input type="radio" name="time" value="저녁 6~8시"><span>저녁 6~8시</span></label>
+            <label><input type="radio" name="time" value="저녁 8시 이후"><span>8시 이후</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>인원</legend>
+          <div class="count"><span class="lab">어른</span><button type="button" data-k="adult" data-d="-1" aria-label="어른 한 명 빼기">−</button><output id="adult">2</output><button type="button" data-k="adult" data-d="1" aria-label="어른 한 명 더하기">+</button></div>
+          <div class="count"><span class="lab">아이</span><button type="button" data-k="kid" data-d="-1" aria-label="아이 한 명 빼기">−</button><output id="kid">0</output><button type="button" data-k="kid" data-d="1" aria-label="아이 한 명 더하기">+</button></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>필요한 것 (여러 개 선택)</legend>
+          <div class="chips">
+            <label><input type="checkbox" name="need" value="유아의자"><span>유아의자</span></label>
+            <label><input type="checkbox" name="need" value="주차"><span>차로 가요(주차)</span></label>
+            <label><input type="checkbox" name="need" value="야외 테이블 희망"><span>야외 테이블</span></label>
+            <label><input type="checkbox" name="need" value="단체석"><span>단체석</span></label>
+            <label><input type="checkbox" name="need" value="외국인 일행 있음"><span>외국인 일행</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>더 하실 말씀 (선택)</legend>
+          <textarea id="pMemo" placeholder="예: 생일이에요, 처음 와 봐요, 몇 시쯤 도착해요"></textarea>
+        </fieldset>
+      </form>
+      <div class="tool-out" aria-live="polite">
+        <h3>정리된 내용</h3>
+        <pre id="planOut"></pre>
+        <div class="out-btns">
+          <a class="btn btn-primary" href="tel:064-739-0775" data-track="call" data-where="plan"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>이 내용으로 전화하기</a>
+          <button class="btn btn-ghost" type="button" id="copyBtn">내용 복사</button>
+          <a class="btn btn-ghost" href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener" data-track="naver" data-where="plan">네이버 예약</a>
+        </div>
+        <p class="copied" id="copied"></p>
+        <p class="tool-note">예약이 확정되는 것은 아니에요. 자리는 매장에 확인해 주세요.<span class="draft-only"> <span class="blank">단체 예약 조건 · 문자 받는 번호(있으면 문자 보내기 추가)</span></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 망설이는 이유 -->
+<section class="sec alt" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="k">자주 묻는 질문</p>
+      <h2 id="faq-h">오기 전에 궁금한 것</h2>
+    </div>
+    <div class="faq">
+      <details open=""><summary>고기는 직접 구워야 하나요?</summary><p>직원이 고기를 구워 드리는 서비스가 있어요.<span class="draft-only"> <span class="blank">메뉴·시간대별 조건이 있으면</span></span></p></details>
+      <details><summary>단체로 가도 되나요?</summary><p>단체석이 있어요. 몇 분까지 되는지는 전화로 확인해 주세요.<span class="draft-only"> <span class="blank">최대 인원 · 예약 조건</span></span></p></details>
+      <details><summary>예전 일주서로 873 가게와 같은 곳인가요?</summary><p>네, 천제연로 280(중문보건소 건너편)으로 넓혀 옮겼어요.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. 외국 손님: 4개 언어. 번역은 사장님 확인·원어민 검수 전까지 운영 사이트에서 뺀다(draft-only). 확인된 사실만 옮겼다. -->
+<section class="sec alt draft-only" id="lang" aria-labelledby="lang-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="k">외국 손님 · International guests</p>
+      <h2 id="lang-h" lang="en">Jeju black pork BBQ in Jungmun</h2>
+      <p><span class="blank">번역 검수 전 (사장님 확인 + 원어민 검수 후 배포) · 받는 결제수단 · 외국어 메뉴판</span></p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="언어 선택">
+      <button role="tab" id="t-en" aria-selected="true" aria-controls="p-en" type="button">English</button>
+      <button role="tab" id="t-zhs" aria-selected="false" aria-controls="p-zhs" type="button">简体中文</button>
+      <button role="tab" id="t-zht" aria-selected="false" aria-controls="p-zht" type="button">繁體中文</button>
+      <button role="tab" id="t-ja" aria-selected="false" aria-controls="p-ja" type="button">日本語</button>
+    </div>
+
+    <div class="lang-panel" role="tabpanel" id="p-en" aria-labelledby="t-en" lang="en">
+      <div>
+        <h3>Cheondonga (천돈가) Jeju Jungmun Main Branch</h3>
+        <p>Jeju black pork BBQ. Staff grill the meat for you. The signature menu is Nanchuk-matdon (난축맛돈), a pork breed developed by Korea's Rural Development Administration.</p>
+        <dl>
+          <dt>Address</dt><dd>1F, 280 Cheonjeyeon-ro, Jungmun-dong, Seogwipo-si, Jeju<br>(across from Jungmun Public Health Center)<br><small style="font-weight:400">We moved from our old address, 873 Iljuseo-ro. Same restaurant.</small></dd>
+          <dt>Hours</dt><dd>11:30–23:00 <span class="blank">closed days</span></dd>
+          <dt>Phone</dt><dd><a href="tel:+82647390775">+82-64-739-0775</a></dd>
+          <dt>Parking</dt><dd>Private parking lot</dd>
+          <dt>Kids</dt><dd>High chairs available</dd>
+          <dt>Maps</dt><dd>Use Naver Map or KakaoMap for directions. Google Maps has limited directions in Korea (as of March 2026).<br><a href="https://map.naver.com/p/search/%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">Naver Map ↗</a> · <a href="https://map.kakao.com/?q=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">KakaoMap ↗</a><br><a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener">Reviews &amp; booking info (Naver) ↗</a></dd>
+        </dl>
+      </div>
+      <div class="staff">
+        <h4>Show this to our staff</h4>
+        <ul>
+          <li><b lang="ko">고기 구워 주세요.</b><span>Please grill the meat for us.</span></li>
+          <li><b lang="ko">유아의자 하나 주세요.</b><span>One high chair, please.</span></li>
+          <li><b lang="ko">메뉴판 보여 주세요.</b><span>May I see the menu?</span></li>
+          <li><b lang="ko">계산할게요.</b><span>The bill, please.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lang-panel" role="tabpanel" id="p-zhs" aria-labelledby="t-zhs" lang="zh-Hans" hidden="">
+      <div>
+        <h3>천돈가 Cheondonga 济州中文（Jungmun）本店</h3>
+        <p>济州黑猪肉烤肉店。店员会为您烤肉。招牌菜是 Nanchuk-matdon（난축맛돈，韩国农村振兴厅培育的猪品种）。</p>
+        <dl>
+          <dt>地址</dt><dd>济州特别自治道 西归浦市 천제연로（天帝渊路）280号 1楼<br>（中文（Jungmun）保健所对面）<br><small style="font-weight:400">本店已从旧址 일주서로 873 搬迁至此，是同一家店。</small></dd>
+          <dt>营业时间</dt><dd>11:30–23:00 <span class="blank">休息日</span></dd>
+          <dt>电话</dt><dd><a href="tel:+82647390775">+82-64-739-0775</a></dd>
+          <dt>停车</dt><dd>有专用停车场</dd>
+          <dt>儿童</dt><dd>有儿童椅</dd>
+          <dt>地图</dt><dd>在韩国导航建议使用 Naver 地图或 Kakao 地图。Google 地图在韩国的导航功能有限（截至2026年3月）。<br><a href="https://map.naver.com/p/search/%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">Naver 地图 ↗</a> · <a href="https://map.kakao.com/?q=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">Kakao 地图 ↗</a><br><a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener">评价与预约信息（Naver） ↗</a></dd>
+        </dl>
+      </div>
+      <div class="staff">
+        <h4>请出示给店员看</h4>
+        <ul>
+          <li><b lang="ko">고기 구워 주세요.</b><span>请帮我们烤肉。</span></li>
+          <li><b lang="ko">유아의자 하나 주세요.</b><span>请给我们一把儿童椅。</span></li>
+          <li><b lang="ko">메뉴판 보여 주세요.</b><span>请给我看菜单。</span></li>
+          <li><b lang="ko">계산할게요.</b><span>我要结账。</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lang-panel" role="tabpanel" id="p-zht" aria-labelledby="t-zht" lang="zh-Hant" hidden="">
+      <div>
+        <h3>천돈가 Cheondonga 濟州中文（Jungmun）本店</h3>
+        <p>濟州黑豬肉燒烤店。店員會為您烤肉。招牌菜是 Nanchuk-matdon（난축맛돈，韓國農村振興廳培育的豬品種）。</p>
+        <dl>
+          <dt>地址</dt><dd>濟州特別自治道 西歸浦市 천제연로（天帝淵路）280號 1樓<br>（中文（Jungmun）保健所對面）<br><small style="font-weight:400">本店已從舊址 일주서로 873 搬遷至此，是同一家店。</small></dd>
+          <dt>營業時間</dt><dd>11:30–23:00 <span class="blank">公休日</span></dd>
+          <dt>電話</dt><dd><a href="tel:+82647390775">+82-64-739-0775</a></dd>
+          <dt>停車</dt><dd>有專用停車場</dd>
+          <dt>兒童</dt><dd>有兒童椅</dd>
+          <dt>地圖</dt><dd>在韓國導航建議使用 Naver 地圖或 Kakao 地圖。Google 地圖在韓國的導航功能有限（截至2026年3月）。<br><a href="https://map.naver.com/p/search/%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">Naver 地圖 ↗</a> · <a href="https://map.kakao.com/?q=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">Kakao 地圖 ↗</a><br><a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener">評價與預約資訊（Naver） ↗</a></dd>
+        </dl>
+      </div>
+      <div class="staff">
+        <h4>請出示給店員看</h4>
+        <ul>
+          <li><b lang="ko">고기 구워 주세요.</b><span>請幫我們烤肉。</span></li>
+          <li><b lang="ko">유아의자 하나 주세요.</b><span>請給一張兒童椅。</span></li>
+          <li><b lang="ko">메뉴판 보여 주세요.</b><span>請給我看菜單。</span></li>
+          <li><b lang="ko">계산할게요.</b><span>我要結帳。</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lang-panel" role="tabpanel" id="p-ja" aria-labelledby="t-ja" lang="ja" hidden="">
+      <div>
+        <h3>천돈가 チョンドンガ 済州・中文（チュンムン）本店</h3>
+        <p>済州黒豚の焼肉店です。お肉はスタッフが焼いてお出しします。看板メニューはナンチュクマットン（난축맛돈、韓国農村振興庁が開発した豚の品種）です。</p>
+        <dl>
+          <dt>住所</dt><dd>済州特別自治道 西帰浦市 천제연로（天帝淵路）280 1階<br>（中文（チュンムン）保健所の向かい）<br><small style="font-weight:400">旧住所 일주서로 873 から移転しました。同じお店です。</small></dd>
+          <dt>営業時間</dt><dd>11:30–23:00 <span class="blank">定休日</span></dd>
+          <dt>電話</dt><dd><a href="tel:+82647390775">+82-64-739-0775</a></dd>
+          <dt>駐車場</dt><dd>専用駐車場あり</dd>
+          <dt>お子さま</dt><dd>ベビーチェアあり</dd>
+          <dt>地図</dt><dd>道案内は NAVERマップ か カカオマップ をご利用ください。Googleマップは韓国では経路案内が制限されています（2026年3月時点）。<br><a href="https://map.naver.com/p/search/%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">NAVERマップ ↗</a> · <a href="https://map.kakao.com/?q=%EC%B2%9C%EB%8F%88%EA%B0%80%20%EC%A0%9C%EC%A3%BC%EC%A4%91%EB%AC%B8%EB%B3%B8%EC%A0%90" target="_blank" rel="noopener">カカオマップ ↗</a><br><a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener">口コミ・予約案内（NAVER） ↗</a></dd>
+        </dl>
+      </div>
+      <div class="staff">
+        <h4>スタッフに見せてください</h4>
+        <ul>
+          <li><b lang="ko">고기 구워 주세요.</b><span>お肉を焼いてください。</span></li>
+          <li><b lang="ko">유아의자 하나 주세요.</b><span>ベビーチェアをひとつお願いします。</span></li>
+          <li><b lang="ko">메뉴판 보여 주세요.</b><span>メニューを見せてください。</span></li>
+          <li><b lang="ko">계산할게요.</b><span>お会計をお願いします。</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-addr" style="margin-top:var(--s3)"><span id="nameKo" lang="ko">천돈가 제주중문본점</span><button type="button" data-copy="nameKo" lang="en">Copy name · 复制店名 · 複製店名 · 店名をコピー</button></div>
+    <div class="copy-addr" style="margin-top:10px"><span id="addrKo3" lang="ko">제주특별자치도 서귀포시 천제연로 280</span><button type="button" data-copy="addrKo3" lang="en">Copy address · 复制地址 · 複製地址 · 住所をコピー</button></div>
+  </div>
+</section>
+
+<!-- 10. 연락 -->
+<section class="sec dark" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:var(--s3)">
+        <p class="k">예약·문의</p>
+        <h2 id="contact-h">전화로 문의하세요</h2>
+      </div>
+      <a class="big-tel" href="tel:064-739-0775" data-track="call" data-where="contact">064-739-0775</a>
+      <ul class="after">
+        <li><b>받는 곳</b><span>천돈가 제주중문본점 매장</span></li>
+        <li><b>영업</b><span>11:30~23:00<span class="draft-only"> <span class="blank">휴무일</span></span></span></li>
+        <li><b>주소</b><span>서귀포시 천제연로 280, 1층 (중문보건소 건너편)</span></li>
+      </ul>
+    </div>
+    <div>
+      <p style="color:var(--band-muted)">다녀가신 분들의 리뷰와 예약 안내는 네이버에서 보실 수 있어요.</p>
+      <div class="links">
+        <a href="https://naver.me/xDJuE5hg" target="_blank" rel="noopener" data-track="naver" data-where="contact">네이버 플레이스 · 예약 ↗</a>
+        <a href="#plan">방문 내용 정리하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>천돈가 제주중문본점</b> · 제주특별자치도 서귀포시 천제연로 280, 1층 · 064-739-0775</p>
+    <p class="draft-only">대표자 <span class="blank">이름</span> · 사업자등록번호 <span class="blank">000-00-00000</span></p>
+    <p>이 페이지의 사진은 참고 이미지입니다(Unsplash). 매장 실제 사진으로 바꿀 예정이에요.</p>
+    <p>최종 수정 2026-10-23</p>
+  </div>
+</footer>
+
+<div class="draft-note draft-only" role="note">천돈가 사장님께 드리는 제안용 예시입니다. 정식 홈페이지가 아닙니다.</div>
+
+<div class="callbar" id="callbar"><a href="tel:064-739-0775" tabindex="-1" data-track="call" data-where="callbar">전화 문의 <b>064-739-0775</b></a></div>
+
+<script>
+(function(){
+  var f=document.getElementById('planForm'), out=document.getElementById('planOut');
+  var n={adult:2,kid:0};
+  function fmtDate(v){if(!v)return '';var d=new Date(v+'T00:00:00');var w='일월화수목금토'[d.getDay()];return (d.getMonth()+1)+'월 '+d.getDate()+'일('+w+')';}
+  function render(){
+    var t=(f.querySelector('input[name=time]:checked')||{}).value;
+    var needs=[].slice.call(f.querySelectorAll('input[name=need]:checked')).map(function(i){return i.value});
+    var memo=document.getElementById('pMemo').value.trim();
+    var d=fmtDate(document.getElementById('pDate').value);
+    var lines=['[천돈가 방문 문의]'];
+    lines.push('날짜: '+(d||'(아직 안 정함)'));
+    lines.push('시간: '+(t||'(아직 안 정함)'));
+    lines.push('인원: 어른 '+n.adult+'명'+(n.kid?', 아이 '+n.kid+'명':''));
+    if(needs.length) lines.push('필요: '+needs.join(', '));
+    if(memo) lines.push('메모: '+memo);
+    out.textContent=lines.join('\n');
+  }
+  f.addEventListener('input',render); f.addEventListener('change',render);
+  [].forEach.call(document.querySelectorAll('.count button'),function(b){
+    b.addEventListener('click',function(){var k=b.dataset.k;n[k]=Math.max(k==='adult'?1:0,Math.min(40,n[k]+Number(b.dataset.d)));document.getElementById(k).textContent=n[k];render();});
+  });
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var msg=document.getElementById('copied');
+    function done(){msg.textContent='복사했어요. 네이버 예약에 붙여 넣으셔도 돼요.';}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(out.textContent).then(done,function(){msg.textContent='복사가 안 되면 위 내용을 길게 눌러 복사해 주세요.';});}
+    else{msg.textContent='위 내용을 길게 눌러 복사해 주세요.';}
+  });
+  render();
+
+  // 주소 복사
+  [].forEach.call(document.querySelectorAll('[data-copy]'),function(b){
+    var label=b.textContent;
+    b.addEventListener('click',function(){
+      var t=document.getElementById(b.dataset.copy).textContent;
+      function ok(){b.textContent='✓';setTimeout(function(){b.textContent=label},1500);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){var r=document.createRange();r.selectNodeContents(document.getElementById(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);});}
+    });
+  });
+  // 언어 탭
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});});});
+
+  // 하단 전화 바: 첫 화면 전화 버튼과 문의 섹션이 보이는 동안은 숨김
+  var bar=document.getElementById('callbar'), heroCall=document.getElementById('hero-call'), contact=document.getElementById('contact');
+  if('IntersectionObserver' in window){
+    var vis={hero:true,contact:false};
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target===heroCall?'hero':'contact']=e.isIntersecting});bar.classList.toggle('show',!vis.hero&&!vis.contact);});
+    io.observe(heroCall); io.observe(contact);
+  } else { bar.classList.add('show'); }
+})();
+</script>
+</body></html>
